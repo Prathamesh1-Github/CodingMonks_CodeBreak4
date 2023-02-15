@@ -1,0 +1,109 @@
+/* colors code -->  #71b7e6 #9b59b6 */
+.fullBody{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.containerCreateRide{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    border-radius: 10px;
+    /* box-shadow: 6px 6px 12px 6px rgb(188, 188, 188); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.containerCreateRide .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.containerCreateRide .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+}
+.containerCreateRide form .ride-details-createride{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+} 
+form .ride-details-createride .input-box-createride{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.ride-details-createride .input-box-createride .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.ride-details-createride .input-box-createride input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border-bottom-width: 1px;
+    transition: all 0.3s ease;
+}
+.ride-details-createride .input-box-createride input:focus,
+.ride-details-createride .input-box-createride input:valid{
+    border-color: #2e5990;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .createButton{
+    height: 40px;
+}
+form .createButton input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #6589bb;
+    transition: all 0.2s ease;
+}
+form .createButton input:hover{
+    background: #2e5990;
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: #757575;
+}
+input[type=time]:invalid::-webkit-datetime-edit {
+    color: #757575;
+}
+
+@media(max-width: 584px){
+    .containerCreateRide{
+        max-width: 100%;
+    }
+    form .ride-details-createride .input-box-createride{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .containerCreateRide form .ride-details-createride{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .ride-details-createride::-webkit-scrollbar{
+        width: 0;
+    }
+}

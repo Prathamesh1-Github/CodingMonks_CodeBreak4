@@ -18,6 +18,7 @@ const authenticateUser = require('./middleware/authentication')
 // routers
 const authRouter = require('./routes/auth')
 const ridesRouter = require('./routes/rides')
+const profileRouter = require('./routes/profile')
 
 // error handler
 const notFoundMiddleware = require('./middleware/not-found');
@@ -33,6 +34,7 @@ app.use(cors(corsOptions))
 
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/rides', authenticateUser, ridesRouter)
+app.use('/api/v1', authenticateUser, profileRouter)
 
 
 app.use(notFoundMiddleware);

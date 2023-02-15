@@ -1,0 +1,101 @@
+.fullbodySingleRide{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.containerSingleRide{
+    margin-top: 100px;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    /* border-radius: 5px;
+    border-radius: 10px; */
+    /* box-shadow: 6px 6px 12px 6px rgb(188, 188, 188); */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+span{
+    color: #708c91;
+}
+.titleDate{
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+.ride-details-singleride{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    margin: 20px 0 12px 0;
+}
+.info-stack-1{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.info-stack-sub{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.info-stack-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.profile-details-singleride{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.chaticon{
+    margin-right: 10px;
+    color: #2e5990;
+}
+.chat-singleride{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e5990;
+}
+.carname-singleride, .carnumber-singleride{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.book-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin: 30px 0;
+}
+.book-button-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: #6589bb;
+    transition: all 0.2s ease;
+}
+.book-button-input:hover{
+    background: #2e5990;
+}

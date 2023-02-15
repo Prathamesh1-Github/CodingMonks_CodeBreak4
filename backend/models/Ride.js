@@ -19,11 +19,11 @@ const RideSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please provide the Date']
     },
-    truckType: {
+    car: {
         type: String,
         required: [true, 'Please provide the Car']
     },
-    truckNumber: {
+    carNumber: {
         type: String,
         required: [true, 'Please provide the Car Number']
     },

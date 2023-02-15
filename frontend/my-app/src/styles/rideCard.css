@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik:wght@300;400;500&display=swap');
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
+
+.ridesList{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+}
+
+.rideCard{
+    border-radius: 15px;
+    position: relative;
+    background-color: white;
+    margin: 0.5rem;
+    margin-bottom: 0px;
+    flex: 0.8 0 15rem;
+    /* max-width: 30rem;
+    max-height: 50rem; */
+    transition: 0.2s;
+    /* box-shadow: 0.2rem 0.2rem 0.2rem #bbbbbb; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: black;
+}
+
+.rideCard:hover{
+    transform: translateY(-0.2rem);
+    /* box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+}
+
+.displayStack_1, 
+.displayStack_2,
+.displayStack_3,
+.displayStack_4{
+    margin: 1rem 1rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.displayStack_2{
+    margin: 1rem 1rem;
+    padding: 0;
+}
+.departureTime{
+    width: 15%;
+    /* color: #708c91; */
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Lato';
+}
+.startLocationIcon{
+    width: 5%;
+    margin-bottom: 10px;
+    color: #708c91;
+}
+.endLocationIcon{
+    margin-left: 15%;
+    margin-bottom: 10px;
+    width: 5%;
+    color: #708c91;
+}
+.startLocation{
+    width: 50%;
+    /* margin-left: 15px; */
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+}
+.destination{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+}
+.ridePrice{
+    width: auto;
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Lato';
+}
+.carName{
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Lato';
+}
+.verticalLine{
+    margin-left: 15%;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #708c91;
+}
+.person2OutlinedIcon{
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #708c91;
+}
+.createdBy{
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    font-family: 'Lato';
+}
