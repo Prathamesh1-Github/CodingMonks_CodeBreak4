@@ -20,7 +20,7 @@ const getAllWorldRides = async (req, res) => {
 }
 
 const getAllRides = async (req, res) => {
-    const rides = await Ride.find({createdBy: req.user.userId}).sort('createdAt')
+    const rides = await Ride.find({createdBy: req.user.userId}).sort('createdAt').sort({createdAt:-1})
     res.status(StatusCodes.OK).json({rides, count: rides.length})
 }
 
@@ -42,6 +42,7 @@ const getRide = async (req, res) => {
 const createRide = async (req, res) => {
     // first we will get the user id who has created the ride
     req.body.createdBy = req.user.userId
+    req.body.createdByName = req.user.name
     const ride = await Ride.create(req.body)
     res.status(StatusCodes.CREATED).json({ride})
 }

@@ -40,7 +40,12 @@ const RideSchema = new mongoose.Schema({
         ref: 'User',
         required: [true, 'Please provide User']
     },
-}, 
+    createdByName: {
+        type: String,
+        ref: 'User',
+        required: [true, 'Please provide User Name']
+    }
+},
     {timestamps: true}
 )
 
