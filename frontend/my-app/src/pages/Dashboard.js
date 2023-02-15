@@ -30,7 +30,7 @@ const Dashboard = () => {
             setIsError(error.message)
         }
     }
-
+    
     // second api call for single ride
     // const getSingleRide = async () => {
     //     try {

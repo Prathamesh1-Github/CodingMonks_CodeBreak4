@@ -46,6 +46,7 @@ const createRide = async (req, res) => {
     res.status(StatusCodes.CREATED).json({ride})
 }
 
+
 const updateRide = async (req, res) => {
     const {
         body: {startLocation, destination, date, time, car, carNumber, createdBy},
