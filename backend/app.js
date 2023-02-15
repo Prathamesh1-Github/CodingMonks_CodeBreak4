@@ -17,6 +17,7 @@ const authenticateUser = require('./middleware/authentication')
 
 // routers
 const authRouter = require('./routes/auth')
+const ridesRouter = require('./routes/rides')
 
 // error handler
 const notFoundMiddleware = require('./middleware/not-found');
@@ -31,6 +32,8 @@ app.use(express.json());
 app.use(cors(corsOptions))
 
 app.use('/api/v1/auth', authRouter)
+app.use('/api/v1/rides', authenticateUser, ridesRouter)
+
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
