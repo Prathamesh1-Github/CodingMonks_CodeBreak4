@@ -72,7 +72,7 @@ const SingleProduct = () => {
                         <hr></hr>
                         <div className="info-stack-3">
                             <div className="profile-details-singleride">
-                                <div>{singleRide.createdBy}</div>
+                                <div>{singleRide.createdByName}</div>
                                 <AccountCircleIcon/>
                             </div>
                             <div className="extra-details-singleride">

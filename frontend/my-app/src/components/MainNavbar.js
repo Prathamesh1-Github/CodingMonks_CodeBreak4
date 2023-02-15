@@ -10,7 +10,7 @@ const MainNavbar = () => {
         <div className="header">
                 <div className="menu-bar">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <NavLink className="navbar-brand" to="/dashboard">GreenFleet</NavLink>
+                        <NavLink className="navbar-brand" to="/dashboard"><span className="navbrandGreen">Green</span>Fleet</NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>

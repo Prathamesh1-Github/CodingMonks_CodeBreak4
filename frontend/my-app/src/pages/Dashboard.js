@@ -60,7 +60,7 @@ const Dashboard = () => {
             <MainNavbar/>
             <div className="'dashboard">
                 {myData.map((ride) => {
-                    const {startLocation, destination, date, time, car, carNumber, prefferedLoad, price, createdBy, _id} = ride
+                    const {startLocation, destination, date, time, car, carNumber, prefferedLoad, price, createdBy, createdByName, _id} = ride
                     return(
                         <RideCard
                             key = {_id}
@@ -73,6 +73,7 @@ const Dashboard = () => {
                             prefferedLoad = {prefferedLoad}
                             price = {price}
                             createdBy = {createdBy}
+                            createdByName = {createdByName}
                             _id = {_id}
                         />
                     )

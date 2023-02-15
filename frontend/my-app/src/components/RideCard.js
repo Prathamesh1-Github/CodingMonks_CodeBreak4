@@ -52,7 +52,7 @@ export default function RideCard(props){
                 </div>
                 <div className="displayStack_4">
                     <Person2OutlinedIcon className="person2OutlinedIcon"/>
-                    <h5 className="createdBy">{props.createdBy}</h5>
+                    <h5 className="createdBy">{props.createdByName}</h5>
                     <h4 className="carName">{props.car}</h4>
                 </div>
             </NavLink>

@@ -10,7 +10,7 @@ const MainNavbar = () => {
         <div className="header">
                 <div className="menu-bar">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <NavLink className="navbar-brand" to="/dashboard"><p className="greenbrand">Green</p>Fleet</NavLink>
+                        <NavLink className="navbar-brand" to="/createride"><span className="navbrandGreen">Green</span>Fleet</NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -21,6 +21,9 @@ const MainNavbar = () => {
                                 </li> */}
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/dashboard">Switch to Company Mode</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="/rides">Drive History</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="nav-link" to="/profile"><AccountCircleIcon/></NavLink>

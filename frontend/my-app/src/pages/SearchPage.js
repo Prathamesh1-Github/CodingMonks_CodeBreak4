@@ -46,14 +46,20 @@ function SearchPage() {
             {JSON.stringify(rideData) !== '{}' ? 
             <>
                 {rideData.map((ride) => {
-                    const {startLocation, destination, car, createdBy, _id} = ride
+                    const {startLocation, destination, date, time, car, carNumber, prefferedLoad, price, createdBy, createdByName, _id} = ride
                     return(
                         <RideCard
                             key = {_id}
                             startLocation = {startLocation}
                             destination = {destination}
+                            date = {date}
+                            time = {time}
                             car = {car}
+                            carNumber = {carNumber}
+                            prefferedLoad = {prefferedLoad}
+                            price = {price}
                             createdBy = {createdBy}
+                            createdByName = {createdByName}
                             _id = {_id}
                         />
                     )

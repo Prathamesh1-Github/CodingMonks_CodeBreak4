@@ -8,6 +8,7 @@ import CreateRide from './pages/CreateRide'
 import HomePage from './pages/HomePage'
 import SearchPage from './pages/SearchPage'
 import ProfilePage from './pages/ProfilePage'
+import RideHistoryPage from './pages/RideHistory'
 
 const App = () => {
     return(
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path='/createride' exact element={<CreateRide/>}></Route>
                     <Route path='/search' exact element={<SearchPage/>}></Route>
                     <Route path='/profile' exact element={<ProfilePage/>}></Route>
+                    <Route path='/rides' exact element={<RideHistoryPage/>}></Route>
                 </Routes>
             </BrowserRouter>
             {/* <Login /> */}

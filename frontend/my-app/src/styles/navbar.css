@@ -44,6 +44,10 @@
     color: var(--accent-color) !important;
 } 
 
+.navbrandGreen{
+    color: rgb(138, 219, 17);
+}
+
 *{
     padding: 0;
     margin: 0;
