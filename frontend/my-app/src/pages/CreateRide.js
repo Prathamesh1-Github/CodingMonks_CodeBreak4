@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from "axios"
 import "../styles/createride.css"
-import MainNavbar from "../components/MainNavbar"
+import MainNavbar from "../components/MainNavbar2"
 
 function CreateRide() {
     const navigate = useNavigate()
@@ -13,7 +13,9 @@ function CreateRide() {
 		date: "",
 		time: "",
 		car: "",
-		carNumber: ""
+		carNumber: "",
+		prefferedLoad: "",
+		price: ""
 	})
 
 
@@ -122,6 +124,28 @@ function CreateRide() {
 							name="carNumber"
 							onChange={handleChange}
 							value={data.carNumber}
+							required
+						/>
+					</div>
+					<div className='input-box-createride'>
+						<span className='details'>Preffered Load</span>
+						<input
+							type="text"
+							placeholder="Preffered Load"
+							name="prefferedLoad"
+							onChange={handleChange}
+							value={data.prefferedLoad}
+							required
+						/>
+					</div>
+					<div className='input-box-createride'>
+						<span className='details'>Price</span>
+						<input
+							type="text"
+							placeholder="Price"
+							name="price"
+							onChange={handleChange}
+							value={data.price}
 							required
 						/>
 					</div>

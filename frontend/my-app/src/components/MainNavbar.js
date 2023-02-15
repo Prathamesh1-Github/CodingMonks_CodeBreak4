@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/navbar.css"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SearchIcon from '@mui/icons-material/Search';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+// import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import {NavLink} from "react-router-dom"
 
 const MainNavbar = () => {
@@ -10,7 +10,7 @@ const MainNavbar = () => {
         <div className="header">
                 <div className="menu-bar">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <NavLink className="navbar-brand" to="/dashboard">Ride</NavLink>
+                        <NavLink className="navbar-brand" to="/dashboard">GreenFleet</NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -20,7 +20,7 @@ const MainNavbar = () => {
                                     <NavLink className="nav-link" to="/search"><SearchIcon/>Search</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/createride"><AddCircleOutlineIcon/>Publish</NavLink>
+                                    <NavLink className="nav-link" to="/createride">Switch to Driver Mode</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="nav-link" to="/profile"><AccountCircleIcon/></NavLink>

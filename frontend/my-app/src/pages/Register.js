@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from "axios"
 
 
-import registrationImage from '../images/registrationimage2.webp'
+import registrationImage from '../images/registrationimagedhruv.jpg'
 
 import Navbar from "../components/Navbar"
 
@@ -18,7 +18,7 @@ function Register() {
 		name: "",
 		email: "",
 		password: "",
-		sex: "",
+		mobileNo: "",
 		age: "",
 		country: "",
 		city: ""
@@ -168,7 +168,7 @@ function Register() {
                                 <div className="col-lg-7">
                                     <input
                                         className="form-control my-3 p-2"
-                                        type="text"
+                                        type="password"
 										placeholder="Password"
 										name="password"
 										onChange={handleChange}
@@ -177,7 +177,7 @@ function Register() {
                                     />
                                 </div>
                             </div>
-							<div className="form-row">
+							{/* <div className="form-row">
                                 <div className="col-lg-7">
                                     <input
                                         className="form-control my-3 p-2"
@@ -189,7 +189,7 @@ function Register() {
 										required
                                     />
                                 </div>
-                            </div>
+                            </div> */}
 							<div className="form-row">
                                 <div className="col-lg-7">
                                     <input
@@ -199,6 +199,19 @@ function Register() {
 										name="age"
 										onChange={handleChange}
 										value={data.age}
+										required
+                                    />
+                                </div>
+                            </div>
+							<div className="form-row">
+                                <div className="col-lg-7">
+                                    <input
+                                        className="form-control my-3 p-2"
+                                        type="text"
+										placeholder="Mobile Number"
+										name="mobileNo"
+										onChange={handleChange}
+										value={data.mobileNo}
 										required
                                     />
                                 </div>

@@ -11,6 +11,7 @@
 .body_Homepage{
     font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
+    /* padding-top: 50px; */
 }
 
 p{

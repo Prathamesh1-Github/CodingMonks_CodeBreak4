@@ -1,23 +1,29 @@
 import React from "react";
 import "../styles/navbar.css"
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+// import SearchIcon from '@mui/icons-material/Search';
+// import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import {NavLink} from "react-router-dom"
 
-const Navbar = () => {
+const MainNavbar = () => {
     return (
         <div className="header">
-                <div className="menu-bar container">
+                <div className="menu-bar">
                     <nav className="navbar navbar-expand-lg navbar-light">
-                        <NavLink className="navbar-brand" to="/">GreenFleet</NavLink>
+                        <NavLink className="navbar-brand" to="/dashboard"><p className="greenbrand">Green</p>Fleet</NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul className="navbar-nav ml-auto">
+                                {/* <li className="nav-item active">
+                                    <NavLink className="nav-link" to="/search"><SearchIcon/>Search</NavLink>
+                                </li> */}
                                 <li className="nav-item">
-                                    <NavLink className="nav-link secondary-button" to="/login">Sign In</NavLink>
+                                    <NavLink className="nav-link" to="/dashboard">Switch to Company Mode</NavLink>
                                 </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link primary-button" to="/register">Sign Up</NavLink>
+                                <li>
+                                    <NavLink className="nav-link" to="/profile"><AccountCircleIcon/></NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -27,4 +33,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default MainNavbar

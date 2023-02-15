@@ -10,6 +10,14 @@ body{
     box-sizing: border-box;
     background: #eaebf1;
 }
+body-login{
+    /* background: rgb(220, 220, 220); */
+    padding: 0;
+    padding-top: 50px !important;
+    margin: 0;
+    box-sizing: border-box;
+    background: #eaebf1;
+}
 .row{
     background: white;
     border-radius: 10px;
@@ -25,8 +33,12 @@ img{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80% !important; 
+    max-height: 80% !important;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
 }
 .btn1{

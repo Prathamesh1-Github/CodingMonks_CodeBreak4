@@ -10,6 +10,9 @@ import { NavLink } from "react-router-dom"
 
 import Fade from "react-reveal/Fade"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '@fortawesome/free-solid-svg-icons'
+
 
 
 const HomePage = () => {
@@ -47,6 +50,7 @@ const HomePage = () => {
                     <div className="features-area flex">
                         <Fade bottom distance="10%" duration={1500}>
                             <div className="features-card flex">
+                                <FontAwesomeIcon icon="fa-solid fa-window-restore" />
                                 <h3>Collaborative platform</h3>
                                 <p>Our platform is designed to meet the evolving needs of the market and corporate world,
                                     providing a comprehensive solution.</p>

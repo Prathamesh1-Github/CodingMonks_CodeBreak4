@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import loginImage from '../images/loginimage.jpg'
+import loginImage from '../images/signindhruv.webp'
 
 import "../styles/login.css"
 
@@ -64,7 +64,7 @@ function Login() {
     // )
 
     return(
-        <div className='body'>
+        <div className='body-login'>
             <Navbar/>
             <section className="Form my-3 mx-5">
             <div className="container">
@@ -73,7 +73,7 @@ function Login() {
                         <img src={loginImage} className="img-fluid" alt=""/>
                     </div>
                     <div className="col-lg-7 px-5 pt-5">
-                        <h1 className="font-weight-bold py-3">Ride</h1>
+                        <h1 className="font-weight-bold py-3">GreenFleet</h1>
                         <h4>Sign in to your account</h4>
                         <form onSubmit={loginUser}>
                             <div className="form-row">

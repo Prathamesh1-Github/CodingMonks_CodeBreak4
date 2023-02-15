@@ -31,12 +31,12 @@ export default function RideCard(props){
             </div> */}
             <NavLink to={`/singleride/${props._id}`} style={{ textDecoration: 'none' }}  key={props._id} className='rideCard'>
                 <div className="displayStack_1">
-                    <h3 className="departureTime">20:00</h3>
+                    <h3 className="departureTime">{props.time}</h3>
                     <div className="startLocationIcon">
                         <LocationOnIcon/>
                     </div>
                     <h2 className="startLocation">{props.startLocation}</h2>
-                    <h2 className="ridePrice">$50.00</h2>
+                    <h2 className="ridePrice">₹{props.price}</h2>
                 </div>
                 <div className="displayStack_2">
                     <div className="verticalLine">

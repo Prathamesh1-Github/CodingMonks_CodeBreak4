@@ -30,6 +30,10 @@ const RideSchema = new mongoose.Schema({
     prefferedLoad:{
         type: String,
     },
+    price: {
+        type: String,
+        required: [true, 'Please provide Price']
+    },
     // the createdBy helps us to know the specific ID of the user who has created the ride
     createdBy:{
         type: mongoose.Types.ObjectId,

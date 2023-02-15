@@ -59,11 +59,15 @@ const SingleProduct = () => {
                                 <span className='singleride-details-placeholder'>Destination</span>
                                 <div className="singleride-details">{singleRide.destination}</div>
                             </div>
+                            <div className="info-stack-sub">
+                                <span className='singleride-details-placeholder'>Preffered Load</span>
+                                <div className="singleride-details">{singleRide.prefferedLoad}</div>
+                            </div>
                         </div>
                         <hr></hr>
                         <div className="info-stack-2">
-                            <span className='singleride-details-placeholder'>Total price for 1 passenger</span>
-                            <div className="singleride-details">singleRide.price</div>
+                            <span className='singleride-details-placeholder'>Total price</span>
+                            <div className="singleride-details">₹{singleRide.price}</div>
                         </div>
                         <hr></hr>
                         <div className="info-stack-3">
