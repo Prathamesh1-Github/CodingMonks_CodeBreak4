@@ -109,7 +109,7 @@ function CreateRide() {
 						<span className='details'>Truck</span>
 						<input
 							type="text"
-							placeholder="Which Car?"
+							placeholder="Which Truck?"
 							name="car"
 							onChange={handleChange}
 							value={data.car}
@@ -120,7 +120,7 @@ function CreateRide() {
 						<span className='details'>Truck Number</span>
 						<input
 							type="text"
-							placeholder="Car Number"
+							placeholder="Truck Number"
 							name="carNumber"
 							onChange={handleChange}
 							value={data.carNumber}

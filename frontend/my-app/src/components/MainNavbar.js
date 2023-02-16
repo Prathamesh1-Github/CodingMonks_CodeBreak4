@@ -20,7 +20,7 @@ const MainNavbar = () => {
                                     <NavLink className="nav-link" to="/search"><SearchIcon/>Search</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/createride">Switch to Driver Mode</NavLink>
+                                    <NavLink className="nav-link nav-link-switch" to="/createride">Switch to Driver Mode</NavLink>
                                 </li>
                                 <li>
                                     <NavLink className="nav-link" to="/profile"><AccountCircleIcon/></NavLink>

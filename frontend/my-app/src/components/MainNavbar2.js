@@ -20,7 +20,7 @@ const MainNavbar = () => {
                                     <NavLink className="nav-link" to="/search"><SearchIcon/>Search</NavLink>
                                 </li> */}
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/dashboard">Switch to Company Mode</NavLink>
+                                    <NavLink className="nav-link nav-link-switch" to="/dashboard">Switch to Company Mode</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/rides">Drive History</NavLink>

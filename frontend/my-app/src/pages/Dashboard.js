@@ -59,6 +59,7 @@ const Dashboard = () => {
             {/* <hr/> */}
             <MainNavbar/>
             <div className="'dashboard">
+            <h2 className="dashboardHeader">WelCome! Here Are All The Drivers Available</h2>
                 {myData.map((ride) => {
                     const {startLocation, destination, date, time, car, carNumber, prefferedLoad, price, createdBy, createdByName, _id} = ride
                     return(

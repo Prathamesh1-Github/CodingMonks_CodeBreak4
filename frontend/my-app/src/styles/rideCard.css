@@ -7,6 +7,20 @@
     justify-content: center;
 }
 
+.historyHeader{
+    margin-left: 550px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+.dashboardHeader{
+    margin-left: 300px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
 .ridesList{
     display: flex;
     justify-content: space-evenly;

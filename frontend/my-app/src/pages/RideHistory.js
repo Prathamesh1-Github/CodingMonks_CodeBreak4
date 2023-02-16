@@ -37,6 +37,8 @@ const ProfilePage = () => {
         <div className="mainPage">
             <MainNavbar/>
             {/* <h1>{profileInfo[0]}</h1> */}
+            {/* <h2>Drive History</h2> */}
+            <h2 className="historyHeader">Drive History</h2>
             {rideInfo.map((ride) => {
                     const {startLocation, destination, date, time, car, carNumber, prefferedLoad, price, createdBy, createdByName, _id} = ride
                     return(
