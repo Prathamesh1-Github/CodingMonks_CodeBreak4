@@ -3,7 +3,7 @@ const {StatusCodes} = require('http-status-codes')
 const {BadRequestError, NotFoundError} = require('../errors')
 
 const getAllWorldRides = async (req, res) => {
-    const {startLocation, destination, date} = req.query
+    const {startLocation, destination, date, sort} = req.query
     const queryObject = {}
     if(startLocation){
         queryObject.startLocation = { $regex: startLocation, $options: 'i'}
@@ -14,8 +14,17 @@ const getAllWorldRides = async (req, res) => {
     if(date){
         queryObject.date = { $regex: date, $options: 'i'}
     }
-    let rides = await Ride.find(queryObject).sort({createdAt:-1})
+    let result = Ride.find(queryObject)
     // const rides = await Ride.find().sort({createdAt:-1})
+    if(sort){
+        const sortList = sort.split(',').join(' ');
+        result = result.sort(sortList);
+    }
+    else{
+        result = result.sort({createdAt:-1})
+    }
+    const rides = await result
+
     res.status(StatusCodes.OK).json(rides)
 }
 
