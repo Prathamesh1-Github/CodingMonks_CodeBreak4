@@ -1,8 +1,16 @@
 .searchSection{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+.searchSectionFilter{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 .searchbox{
     box-sizing: border-box;
@@ -31,5 +39,14 @@
     border: none;
     padding: 12px;
     width: 140px;
+    border-radius: 0 20px 20px 0;
+}
+.search-button-filter{
+    color: white;
+    background: #6589bb;
+    border: none;
+    padding: 12px;
+    width: 140px;
+    height: 54px;
     border-radius: 0 20px 20px 0;
 }
