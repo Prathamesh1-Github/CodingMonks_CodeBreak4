@@ -52,6 +52,9 @@ const createRide = async (req, res) => {
     // first we will get the user id who has created the ride
     req.body.createdBy = req.user.userId
     req.body.createdByName = req.user.name
+    req.body.mobileNo = req.user.mobileNo
+    console.log(req.user.name)
+    console.log(req.user.mobileNo)
     const ride = await Ride.create(req.body)
     res.status(StatusCodes.CREATED).json({ride})
 }

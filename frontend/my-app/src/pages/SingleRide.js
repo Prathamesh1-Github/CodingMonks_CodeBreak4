@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useState, useEffect } from "react"
 import axios from "axios"
 import MainNavbar from "../components/MainNavbar"
@@ -72,7 +72,9 @@ const SingleProduct = () => {
                         <hr></hr>
                         <div className="info-stack-3">
                             <div className="profile-details-singleride">
-                                <div>{singleRide.createdByName}</div>
+                                <NavLink to={`/profile/${singleRide.createdBy}`} style={{ textDecoration: 'none' }} key={singleRide.createdBy}>
+                                    <div>{singleRide.createdByName}</div>
+                                </NavLink>
                                 <AccountCircleIcon/>
                             </div>
                             <div className="extra-details-singleride">

@@ -1,20 +1,20 @@
 import React from "react";
 import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom";
 import axios from "axios"
 import MainNavbar from "../components/MainNavbar"
 
-import ProfileImage from "../images/balnk_profile_img.webp"
-
-import "../styles/profilePage.css"
-
 const ProfilePage = () => {
-    const [profileInfo, setProfileInfo] = useState([])
+
+    const { id } = useParams()
+
+    const [profileInfo, setProfileInfo] = useState({})
     const [isError, setIsError] = useState('')
 
-    const getProfileInfo = async () => {
+    const getProfileInfo = async (id) => {
         try {
             const res = await axios.get(
-                "http://localhost:3000/api/v1/profile",
+                `http://localhost:3000/api/v1/profile/${id}`,
                 {
                     headers: {
                         "Authorization": "Bearer " + localStorage.getItem('token')
@@ -32,30 +32,26 @@ const ProfilePage = () => {
     console.log(isError)
 
     useEffect(() => {
-        getProfileInfo()
-    }, [])
+        getProfileInfo(id)
+    }, {})
 
     return (
         <div className="mainPage">
             <MainNavbar />
-            {/* <h1>{profileInfo[0]}</h1> */}
-            {
-                profileInfo.map((curEle) => {
-                    return (
                         <div className="profileBody">
                             <div className="container-fluid mycont">
 
                                 <div className="row">
                                     <div className="col-lg-4 text-center custcard1">
-                                        <img src={ProfileImage} className="profileImageStyle"
-                                            alt="profilepic"></img>
+                                        {/* <img src="images/balnk_profile_img.webp" style="max-width: 10rem;max-height: 10rem;border-radius: 100%;"
+                                            alt="profilepic"> */}
                                     </div>
                                     <div className="col-lg-1">
                                         <p></p>
                                     </div>
                                     <div className="col-lg-7 align-self-center pdl2 custcard">
-                                        <h2>{curEle.name}</h2>
-                                        <h5 className="ogloc"><i className="fa-solid fa-location-dot"></i><span className="myloc">{curEle.city}, {curEle.country}</span>
+                                        <h2>{profileInfo.name}</h2>
+                                        <h5 className="ogloc"><i className="fa-solid fa-location-dot"></i><span className="myloc">{profileInfo.city}, {profileInfo.country}</span>
                                         </h5>
                                         <br></br>
                                             <p>Ratings : ⭐⭐⭐⭐⭐</p>
@@ -64,31 +60,27 @@ const ProfilePage = () => {
                                                     <p>Phone Number</p>
                                                 </div>
                                                 <div className="col-lg-6">
-                                                    <p>{curEle.mobileNo}</p>
+                                                    <p>{profileInfo.mobileNo}</p>
                                                 </div>
                                                 <div className="col-lg-6 ">
                                                     <p>E-mail</p>
                                                 </div>
                                                 <div className="col-lg-6">
-                                                    <p>{curEle.email}</p>
+                                                    <p>{profileInfo.email}</p>
                                                 </div>
                                                 <div className="col-lg-6 ">
                                                     <p>Age</p>
                                                 </div>
                                                 <div className="col-lg-6">
-                                                    <p>{curEle.age}</p>
+                                                    <p>{profileInfo.age}</p>
                                                 </div>
                                             </div>
                                     </div>
-
                                 </div>
                                 <hr></hr>
                             </div>
 
                         </div>
-                    )
-                })
-            }
         </div>
     )
 }

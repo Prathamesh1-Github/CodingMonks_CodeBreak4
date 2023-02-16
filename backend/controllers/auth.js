@@ -39,7 +39,7 @@ const login = async (req, res) => {
         httpOnly: false
     })
 
-    res.status(StatusCodes.OK).json({user: {name: user.name}, token})
+    res.status(StatusCodes.OK).json({user: {name: user.name, id: user.id}, token})
 }
 
 

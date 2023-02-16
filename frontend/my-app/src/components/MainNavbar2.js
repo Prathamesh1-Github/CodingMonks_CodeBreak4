@@ -28,6 +28,9 @@ const MainNavbar = () => {
                                 <li>
                                     <NavLink className="nav-link" to="/profile"><AccountCircleIcon/></NavLink>
                                 </li>
+                                <li>
+                                    <NavLink className="nav-link" to="/">Logout</NavLink>
+                                </li>
                             </ul>
                         </div>
                     </nav>

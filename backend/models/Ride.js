@@ -34,6 +34,9 @@ const RideSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please provide Price']
     },
+    mobileNo: {
+        type: String,
+    },
     // the createdBy helps us to know the specific ID of the user who has created the ride
     createdBy:{
         type: mongoose.Types.ObjectId,
